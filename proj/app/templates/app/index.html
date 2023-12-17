@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head> 
+    <meta charsed="UTF-8">
+    <title>shop</title>
+    <link rel="stylesheet" href="{% static 'proj/css/styles.css'%}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        
+        <div class='header_wrap'>
+          <div class="logo_block">
+            <h1>Leila_Shop</h1>
+            </div>
+            <div class="header_btn">
+            <h1><a class="link_btn" href="{% url 'create' %}">create</a></h1>  
+            </div>
+        </div>
+    </div>
+    
+</header>
+ <div class="container">
+    {% for product in products %}
+   
+
+        <div class="product__border">
+
+            <img src="{{ product.url }}">
+
+            <h1>{{ product.title }}</h1>
+
+            <p>{{ product.content }}</p>
+
+            <h2>{{ product.price }} р</h2>
+
+        <div>
+
+        <a class="btn" href="{% url 'product' product.id %}">About</a>
+        <a class="btn" href="{% url 'update' product.id %}">Update</a>
+        <a class="btn" href="{% url 'delete' product.id %}">Delete</a>
+        
+    </div>
+</div>
+
+    {% endfor %}
+</div>
+</body>
+</html>

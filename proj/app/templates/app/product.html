@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <link rel='stylesheet' href="{% static 'proj/css/product.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <div class="product" >
+
+            <div class="product__border">
+                <img class="pic" src="{{product.pic}}" >
+            </div>
+
+            <div class="product__title">
+                <h1 class="title">{{product.title}}</h1>
+            </div>
+            <div class="content__block">
+                <p class="content">{{product.content}}</p>
+            </div>
+
+            <div class="price__block">
+                <p class="price">{{product.price}}</p>
+            </div>
+
+        </div>
+
+        <a href='/' class='link_back'>Back</a>
+    </body>
+</html>

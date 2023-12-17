@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+    
+}
+.container{
+    margin: 0 320px;
+}
+
+
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header_btn{
+    background-color: rgb(141, 77, 202);
+    padding: 0 20px;
+    border-radius: 10px;
+
+}
+
+.link_btn {
+    color: #000;
+
+}
+body{
+    background-color: rgb(192, 145, 236);
+    font-family: Montserrat;
+}
+.product__border{
+    margin: 15px 0px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #d4d4d4;
+
+}
+.btn{
+    color: rgb(155, 100, 236);
+}

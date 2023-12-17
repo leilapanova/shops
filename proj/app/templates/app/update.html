@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link rel='stylesheet' href="{% static 'proj/css/update.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="form__block">
+    <a href='/' class='link_back'>Back</a>
+
+    <form action="" method="post" class="update__form">
+        {% csrf_token %}
+
+        
+
+        <div class="block">
+            <p class="title">title</p>
+            <input type="text" name="title" placeholder="Title" value="{{ product.title }}"/>
+        </div>
+
+        <div class="block">
+            <p class="content">content</p>
+            <input type="text" name="content" placeholder="Content" value="{{ product.content }}"/>
+        </div>
+
+        <div class="block">
+            <p class="price">price</p>
+            <input type="text" name="price" placeholder="price" value="{{ product.price }}"/>
+        </div>
+
+        <div class="block">
+          <p class="pic">url</p>
+          <input type="text" name="url" placeholder="url" value="{{ product.url }}"/>
+      </div>
+
+        
+        
+    </form>
+</div>
+<button class="btn">Update</button>
+
+</body>
+</html>

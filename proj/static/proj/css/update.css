@@ -1,0 +1,63 @@
+body {
+    font-family: Montserrat;
+    background-color:rgb(192, 145, 236);
+}
+
+.update__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+
+}
+
+
+
+.content, .title, .price, .pic{
+    font-size: 45px;
+    color: #9157b3;
+
+}
+
+
+
+input {
+    padding: 20px 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ccc;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.btn {
+    font-family: Montserrat;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    background-color: rgb(195, 158, 212);
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #8332b9;
+    color: #000;
+}
+
+.link_back {
+    font-size: 30px;
+    color: #8d41c6;
+    font-weight: 800;
+    text-decoration: none;
+}
